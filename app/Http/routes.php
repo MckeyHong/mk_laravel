@@ -11,6 +11,9 @@
 |
 */
 
+/* Google reCAPTCHA */
+Route::get('/recaptcha', 'RecaptchaController@getIndex');
+Route::post('/recaptcha/check', 'RecaptchaController@postCheck');
 
 Route::get('/notification', function () {
     return view('notification');
