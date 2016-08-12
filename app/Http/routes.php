@@ -11,6 +11,11 @@
 |
 */
 
+
+Route::get('/notification', function () {
+    return view('notification');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
