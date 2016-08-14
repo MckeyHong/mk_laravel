@@ -11,6 +11,10 @@
 |
 */
 
+/* Google Authentication */
+Route::get('/authentication', 'AuthenticationController@getIndex');
+Route::post('/authentication/check', 'AuthenticationController@postCheck');
+
 /* Google reCAPTCHA */
 Route::get('/recaptcha', 'RecaptchaController@getIndex');
 Route::post('/recaptcha/check', 'RecaptchaController@postCheck');
