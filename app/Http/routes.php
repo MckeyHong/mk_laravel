@@ -23,6 +23,11 @@ Route::get('/notification', function () {
     return view('notification');
 });
 
+
+/* 圖片處理 */
+Route::get('/image/{type?}', 'ImageController@getIndex');
+
+
 Route::get('/', function () {
     return view('welcome');
 });

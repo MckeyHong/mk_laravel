@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "google/recaptcha": "~1.1",
         "pragmarx/google2fa": "^1.0",
-        "bacon/bacon-qr-code": "~1.0"
+        "bacon/bacon-qr-code": "~1.0",
+        "intervention/image": "^2.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
