@@ -12,7 +12,8 @@
         "bacon/bacon-qr-code": "~1.0",
         "intervention/image": "^2.3",
         "maatwebsite/excel": "~2.1.0",
-        "laravelcollective/bus": "^5.2"
+        "laravelcollective/bus": "^5.2",
+        "irazasyed/telegram-bot-sdk": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

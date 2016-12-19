@@ -11,11 +11,11 @@
 |
 */
 
-/* Google Authentication */
+// Google Authentication
 Route::get('/authentication', 'AuthenticationController@getIndex');
 Route::post('/authentication/check', 'AuthenticationController@postCheck');
 
-/* Google reCAPTCHA */
+// Google reCAPTCHA
 Route::get('/recaptcha', 'RecaptchaController@getIndex');
 Route::post('/recaptcha/check', 'RecaptchaController@postCheck');
 
@@ -23,12 +23,16 @@ Route::get('/notification', function () {
     return view('notification');
 });
 
-/* 圖片處理 */
+// 圖片處理
 Route::get('/image/{type?}', 'ImageController@getIndex');
 
-/* Excel */
+// Excel
 Route::get('/excel', 'ExcelController@getIndex');
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Telegram 推播 
+Route::get('/getTelegram', 'TelegramController@getInfo');
+Route::get('/sendTelegram/{message?}', 'TelegramController@sendMessage');
